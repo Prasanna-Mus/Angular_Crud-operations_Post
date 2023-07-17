@@ -1,0 +1,11 @@
+.main-container {
+    margin-top: 50px;
+}
+
+.view, .edit, .delete {
+    margin-left: 10px;
+}
+
+.createPost {
+    margin-bottom: 20px;
+}

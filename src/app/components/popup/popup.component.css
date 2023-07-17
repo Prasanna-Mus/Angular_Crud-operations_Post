@@ -1,0 +1,12 @@
+.container {
+    margin: 50px auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+} 
+
+h2 {
+    color: green;
+}
