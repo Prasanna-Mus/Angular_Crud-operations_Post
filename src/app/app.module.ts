@@ -8,18 +8,23 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PopupComponent } from './components/popup/popup.component';
 import { FormsModule } from '@angular/forms';
+import { LogInPageComponent } from './components/log-in-page/log-in-page.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
-    PopupComponent
+    PopupComponent,
+    LogInPageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

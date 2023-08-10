@@ -1,31 +1,46 @@
-<div class="container main-container">
-    <button class="btn btn-success createPost" (click)="createPostDetails()">Create new post</button>
-    <br>
-
-<table class="table">
-    <thead>
-      <tr>
-        <th scope="col">ID</th>
-        <th scope="col">TITLE</th>
-        <th scope="col">BODY</th>
-        <th scope="col">ACTION</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let post of allPosts">
-        <td>{{post.id}}</td>
-        <td>{{post.title}}</td>
-        <td>{{post.body}}</td>
-        <td>
-            <button class="btn btn-success view" (click)="viewPostDetails(post)">View</button>
-            <button class="btn btn-warning edit" (click)="editPostDetails(post)">Edit</button>
-            <button class="btn btn-danger delete" (click)="deletePostDetails(post.id)">Delete</button>
-        </td>
-      </tr>    
-    </tbody>
-  </table>
-
-  <div *ngIf = "allPosts.length === 0"> No Posts Found !
+<div class="header">
+  <a href="#default" class="logo">CompanyLogo</a>
+  <div class="header-right">
+    <a class="active" href="#home">Home</a>
+    <a >Contact</a>
+    <a >About</a>
   </div>
+  <div class="container main-container">
+      <button class="btn btn-success createPost" (click)="createPostDetails()">Create new post</button>
+      <br>
+  <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">TITLE</th>
+          <th scope="col">BODY</th>
+          <th scope="col">ACTION</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let post of allPosts">
+          <td>{{post.id}}</td>
+          <td>{{post.title}}</td>
+          <td>{{post.body}}</td>
+          <td class="Action">
+              <button class="btn btn-success view" (click)="viewPostDetails(post)">View</button>
+              <button class="btn btn-warning edit" (click)="editPostDetails(post)">Edit</button>
+              <button class="btn btn-danger delete" (click)="deletePostDetails(post.id)">Delete</button>
+          </td>
+        </tr>    
+      </tbody>
+    </table>
 
-</div>
+    <div *ngIf = "allPosts.length === 0"> No Posts Found !
+    </div>
+  </div>
+        <div class="footer">
+          <div class="footer-contents">
+              <div class="footer-contents-left">
+                  <a target="_blank" href="https://www.inmar.com/">&copy; 2023 Inmar Inc.</a>                         
+                  <a target="_blank" href="https://www.inmar.com/Pages/About_Us/Privacy-Policy.aspx">Privacy Policy</a>
+                  <a target="_blank" href="https://www.inmar.com/Pages/About_Us/Terms-of-Use.aspx">Terms of Use</a>
+              </div>
+          </div>
+        </div>
+  </div>

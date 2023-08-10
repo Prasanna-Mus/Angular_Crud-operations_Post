@@ -1,0 +1,36 @@
+
+  .main{
+  width: 100%;
+  position: fixed;
+  padding-top: 200px;
+  padding-left: 20px;
+  padding-right: 600px;
+  padding-bottom: 600px;
+  background-color:rgb(203, 228, 228);
+}
+.form-signin{
+  margin-inline-start: 250px;
+  margin-inline-end: 250px;
+}
+  .container{
+    padding-left: 500px;
+    padding-top: 250px;
+    
+  }
+  .login-title{
+    color: rgb(87, 37, 66);
+    padding-bottom: 20px;
+  }
+  .footer{
+    display: flex;
+    justify-content: flex-start;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      padding-left: 1000px;
+      padding-top: 50px ;
+      padding-bottom: 50px;
+      background-color:rgb(141, 156, 175);
+    }
+    

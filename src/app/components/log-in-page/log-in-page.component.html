@@ -1,0 +1,25 @@
+<body class="main">
+    <div class="container">
+        <div class="row">
+            <div class="row1">
+                <h2 class="text-center login-title">Login Here</h2>
+                <form class="form-signin">
+                    <input type="text" id="username" class="form-control" placeholder="username" [(ngModel)]="username" name="user
+                    " autofocus required><br/>
+                    <input type="password" id="password" class="form-control" placeholder="password" [(ngModel)]="password" name="password" required=""><br/>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit" (click)="navigateToFirst()">Sign in</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-contents">
+            <div class="footer-contents-left">
+                <a target="_blank" href="https://www.inmar.com/">&copy; 2023 Inmar Inc.</a>
+                <a target="_blank" href="https://www.inmar.com/Pages/About_Us/Privacy-Policy.aspx">Privacy Policy</a> 
+                <a target="_blank" href="https://www.inmar.com/Pages/About_Us/Terms-of-Use.aspx">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</body>

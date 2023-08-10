@@ -1,5 +1,7 @@
 .container {
     margin: 50px auto;
+    background-color: rgb(202, 230, 230);
+    border-radius: 5px;
 }
 
 .buttons {
@@ -8,5 +10,6 @@
 } 
 
 h2 {
-    color: green;
+    color: rgb(135, 168, 135);
+    padding-bottom: 5px;
 }

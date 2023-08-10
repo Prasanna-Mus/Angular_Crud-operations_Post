@@ -1,3 +1,29 @@
 {
-  "posts": []
+  "posts": [
+    {
+      "id": 1,
+      "title": "Angular",
+      "body": "Angular is a development platform, built on TypeScript."
+    },
+    {
+      "id": 2,
+      "title": "QA",
+      "body": "Quality assurance testing, or QA testing, is a vital step in the software development cycle."
+    },
+    {
+      "id": 3,
+      "title": "REST API",
+      "body": "REST API Testing is thea techniquedone by hii iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiihii recording response of the REST APIs by sending various HTTP requests "
+    },
+    {
+      "id": 4,
+      "title": "DATABASE testing",
+      "body": "In software testing, Database Testing is testing, which is used to analyse the schema, tables, triggers, etc"
+    },
+    {
+      "id": 5,
+      "title": "java",
+      "body": "Learning java funcitions,menthods,constrctor,packages,class,variables"
+    }
+  ]
 }

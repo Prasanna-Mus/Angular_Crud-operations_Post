@@ -1,21 +1,20 @@
 <div class="container">
-
-    <h2 *ngIf="mode === 'VIEW'"> Post Details </h2>
-    <h2 *ngIf="mode === 'CREATE'"> Create Post </h2>
-    <h2 *ngIf="mode === 'UPDATE'"> Update Post </h2>
+    <h2 *ngIf="mode === 'VIEW'"> View Post Details </h2>
+    <h2 *ngIf="mode === 'CREATE'"> Create New Post </h2>
+    <h2 *ngIf="mode === 'UPDATE'"> Update Existing Post </h2>
 
     <form #postForm="ngForm" (ngSubmit)="onSubmit(postForm)">
         <div class="form-group">
-          <label for="postId">ID</label>
+          <label for="postId">ID</label><br>
           <input type="text" class="form-control" id="postId" placeholder="Enter Post ID" name="postId" [(ngModel)]="postObject.id" disabled>
         </div> <br>
         <div class="form-group">
-          <label for="exampleTitle">Title</label>
+          <label for="exampleTitle">Title</label><br>
           <input type="text" class="form-control" id="exampleTitle" placeholder="Enter Post Title" name="postTitle" [(ngModel)]="postObject.title"
           [disabled]="this.mode === 'VIEW'">
         </div><br>
         <div class="form-group">
-            <label for="exampleBody">Body</label>
+            <label for="exampleBody">Body</label><br>
             <input type="text" class="form-control" id="exampleBody" placeholder="Enter Post Body" name="postBody" [(ngModel)]="postObject.body"
             [disabled]="this.mode === 'VIEW'">
           </div>
@@ -27,14 +26,4 @@
           <button *ngIf="mode === 'VIEW'" class="btn btn-warning" (click)="closePopup()">Okay</button>
         </div>
     </form>
-    
-    
-    
-    <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-
-
-    <!-- <div class="id"><span>Post Id:</span> {{postDetails.id}}</div> -->
-    <!-- <div class="title"><span>Title:</span>  {{postDetails.title}}</div> -->
-    <!-- <div class="body"><span>Body:</span>  {{postDetails.body}}</div> -->
-
 </div>
